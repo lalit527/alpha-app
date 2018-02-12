@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   
   resources :articles
   
-  get 'signup', to: 'user#new'
+  get 'signup', to: 'users#new'
   
-  resources :user, except: [:new]
+  resources :users, except: [:new]
   
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
