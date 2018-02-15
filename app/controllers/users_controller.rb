@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to Alpha Blog #{@user.username}"
       redirect_to articles_path
     else
-      render [:new]
+      render :html => "new"
     end
   end
   
